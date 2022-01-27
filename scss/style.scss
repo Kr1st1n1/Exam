@@ -1,4 +1,9 @@
-body {
-  background:red;
-  box-shadow:5px 5px 5px black;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import "reset.scss";
+@import "general.scss";
+@import "block-top.scss";
+@import "block-banner.scss";
+@import "block-socialIcons";
+@import "block-tabs-swiper";
+@import "block-main";
+@import "block-arguments";

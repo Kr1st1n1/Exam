@@ -1,0 +1,115 @@
+// start of block-main
+.block-main {
+  max-width: 100%;
+  background: #1C1C1C;
+
+  .container {
+  display:flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  padding:0;
+
+  .block-main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 600px;
+    width: 50%;
+
+    .main-logo {
+      display:flex;
+      flex-direction: column;
+      align-items:center;
+      align-self: center;
+      width: 100%;
+
+      img {
+        width: 40%;
+      }
+    }
+    .main-content {
+      display:flex;
+      flex-direction: column;
+      align-items:left;
+      align-self: center;
+      color: white;
+      line-height: 2.5em;
+      padding-right: 150px;
+
+      h2 {
+        font-size: 30px;
+        color: #FFFFFF;
+        font-family: Montserrat, SemiBold;
+        margin-right: 450px;
+      }
+      p {
+        font-size: 14px;
+        font-family: Montserrat, Regular;
+        color: #e9e6e6ed;
+        margin-right: 310px;
+        line-height: 1.5em;
+        letter-spacing: 0px;
+        opacity: 1;
+      }
+    }
+   }
+  }
+}
+
+.maincontenttitle-1 {
+  #circlefont {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #E27866;
+    border-radius: 50%;
+    border:none;
+    opacity: 1;
+
+    h3 {
+      maergin-left: 200px;
+    }
+  }
+}
+
+
+@media(max-width:768px) {
+  .block-main {
+     min-width: 520px;
+      .container {
+        min-width: 450px;
+
+    .block-main-content {
+      flex-direction: column;
+      width:100%;
+      min-height:auto;
+
+      .main-logo {
+        padding-left:50px;
+        padding-right:50px;
+        padding-top: 50px;
+        align-items: center;
+      }
+
+      .main-content {
+        width:92%;
+        padding-left:50px;
+        padding-right:50px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        flex-direction: column;
+        height:100%;
+
+        h2 {
+          margin: 0 auto;
+        }
+
+        p {
+          margin: 0 auto;
+        }
+
+      }
+    }
+  }
+}
+}

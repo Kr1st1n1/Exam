@@ -1,0 +1,153 @@
+
+// block-top
+ .block-1 {
+  height: 10px;
+  overflow: hidden;
+
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+
+    .logo-content {
+      margin-left: -220px;
+    }
+
+    .link-content {
+      margin-top: 15px;
+      letter-spacing: 0px;
+    }
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  line-height:50px;
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0px;
+  z-index: 999;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+
+   a {
+  font-size: 14px;
+  color: #FFFFFF;
+  opacity: 0.69;
+  text-decoration: none;
+  transition: 0.5s;
+  }
+}
+
+  .link {
+    font-size: 14px;
+    margin-right: 18px;
+    margin-left: 18px;
+    z-index: 1;
+    position: relative;
+    padding: 31px 5px;
+    transition: 0.3s;
+    transition-delay: 0.1s;
+
+    &:before {
+      position: absolute;
+      content: "";
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+      height: 5px;
+      border-bottom: 2px solid #E27866;
+      opacity: 0;
+      z-index: -1;
+      transition: 0.3s;
+    }
+  }
+
+  .active {
+    color: white;
+    font-size: 17px;
+    opacity: 1;
+    margin-top: 20px;
+    border-bottom: 2px solid #E27866;
+  }
+
+#burger {
+  display: none;
+  font-size: 1.7em;
+  transition: transform 0.3s;
+}
+
+#logo {
+  display: block;
+  margin-top: 10px;
+  margin-left: 147px;
+  width: 119px;
+  opacity: 1;
+}
+
+.rotateZ {
+  transform: rotateZ(-90deg);
+}
+
+.side-menu {
+  position: relative;
+  top: 0px;
+  height:100vh;
+  margin-top: 50px;
+  flex-direction: column;
+  width: 250px;
+  transform: translateX(-250px);
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.width {
+  transform: translateX(0);
+}
+
+@media (max-width: 768px){
+
+  .block-1 {
+    overflow: visible;
+
+    .container {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+
+    .side-menu {
+      margin-left: -40px;
+      min-height: 1000vh;
+      margin-top: 72px;
+    }
+
+    .menu {
+      padding-left: 47px;
+
+       a {
+        display: none;
+      }
+    }
+  }
+
+  .link {
+    padding: 15px 5px;
+  }
+
+  #logo {
+    display: block;
+  }
+
+  #burger {
+    display: block;
+    margin-right: 30px;
+    align-self: flex-end;
+  }
+}
