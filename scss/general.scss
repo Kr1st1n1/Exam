@@ -1,3 +1,7 @@
+html, body, * {
+	font-family: Montserrat;
+}
+
 .container {
   width: 100%;
   max-width: 1400px;
@@ -6,23 +10,16 @@
   padding-right: 36px;
 }
 
-
-@media (max-width: 991px) {
-  .container {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
+@media(max-width:1200px) {
+	.container {
+		padding-left:24px;
+		padding-right:24px;
+	}
 }
 
-@media (max-width: 768px) {
-  .container {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-}
-@media (max-width: 1199px) {
-  .container {
-    padding-left: 36px;
-    padding-right: 36px;
-  }
+@media(max-width:768px) {
+	.container {
+		padding-left:12px;
+		padding-right:12px;
+	}
 }

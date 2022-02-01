@@ -1,0 +1,152 @@
+
+.block-customers {
+  background-color: $customers-bg-color;
+  min-height:600px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .sectiontitle {
+    text-align:center;
+    padding-bottom: 30px;
+    h2 {
+      color:#1C1C1C;
+      font-size: 36px;
+      font-family: Montserrat, SemiBold;
+      padding-bottom: 20px;
+    }
+    .blue-line {
+      height: 2px;
+      background-color: #6696e2;
+      display: inline-block;
+      align-items: center;
+      margin: 20px;
+      width: 64px;
+    }
+  }
+}
+
+  .customers-content {
+    display:flex;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+
+
+    .customer{
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      line-height: 1.2em;
+      font-family: Montserrat, Regular;
+      letter-spacing: 0px;
+      padding-right: 20px;
+      padding-left: 0px;
+
+    }
+  }
+
+  .content-text {
+    max-width: 260px;
+    background: #6696E2;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    display: flex;
+    align-self: center;
+    position: relative;
+
+    &:after {
+    position: absolute;
+    content: "";
+    bottom: -25px;
+    border: 15px solid transparent;
+    border-top: 15px solid #6696E2;
+  }
+}
+
+.people {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+
+  .avatar {
+    position: absolute;
+    content: "";
+    right: 254px;
+    width: 70px;
+    height: 70px;
+    background: url("../images/customersimages/avatar_2_u231.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+  }
+
+  .people-name {
+    margin-top: 15px;
+    text-align: left;
+    margin-left: 150px;
+
+    h3 {
+      font-size: 20px;
+      font-family: Montserrat, Regular;
+    }
+    p {
+      font-size: 14px;
+      font-family: Montserrat, Regular;
+      color: #86878B;
+    }
+  }
+}
+
+   .swiper3 {
+     padding-bottom: 130px;
+     width: auto;
+
+    .swiper-pagination-bullet {
+      border: 2px solid #E27866;
+      background: none;
+      width: 10px;
+      height: 10px;
+      opacity: 1;
+    }
+
+     .swiper-pagination-bullet-active {
+      background: #E27866;
+    }
+
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+     display: none;
+    }
+  }
+
+@media(max-width: 768px) {
+ .block-customers .container{
+   width: 100%;
+   margin: 0 auto;
+
+   .sectiontitle {
+      margin: 0 auto;
+     h2 {
+       margin-top: 60px;
+       margin-bottom: 20px;
+       font-size: 39px;
+     }
+   }
+ }
+
+ .people .avatar{
+      margin: 0 auto;
+      right: 200px;
+      width: 70px;
+      height: 70px;
+  }
+ }

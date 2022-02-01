@@ -1,0 +1,246 @@
+@mixin nth-of-tone-style {
+  background-image: url("../images/pricingimages/card_header_u266.png");
+  color: $font-pricing-color;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+@mixin nth-of-ttwo-style {
+  background-image: url("../images/pricingimages/card_price_u268.png");
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color:$font-pricing-color;
+  font-size: 36px;
+}
+@mixin nth-of-tthree-style {
+  background-image: url("../images/pricingimages/card_sub_text_u270.png");
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 14px;
+}
+@mixin plancontent-li-style{
+  background-image: url("../images/pricingimages/pricing_feature_u13.png");
+  color: #86878B;
+  padding-top:8px;
+  padding-bottom: 8px;
+  font-size: 14px;
+}
+
+// start of block-pricing
+.block-pricing {
+  background-color: $font-pricing-bg-color;
+  padding-top:50px;
+  padding-bottom:65px;
+  min-height:960px;
+  display: flex;
+  align-self: flex-end;
+  flex-direction: row;
+  align-items: center;
+
+  .sectionheading {
+    text-align:center;
+    margin-bottom:50px;
+
+    h2 {
+      color:$font-pricing-color;
+      font-size: 36px;
+      font-family: Montserrat, SemiBold;
+    }
+
+    .green-line {
+      height: 2px;
+      background-color: #41d395;
+      display: inline-block;
+      align-items: center;
+      margin: 20px;
+      width: 64px;
+    }
+
+    p {
+      color: $font-pricing-color;
+      font-size: 14px;
+      font-family: Montserrat, Regular;
+    }
+  }
+}
+
+  .pricing-content {
+    display:flex;
+    align-items: center;
+    display: flex;
+    flex-wrap:wrap;
+    padding-right: 5px;
+    padding-left: 5px;
+
+    .price-option {
+      margin: 0 auto;
+      display: inline-block;
+      text-align: center;
+      line-height: 1.5em;
+      margin: 0px;
+    }
+  }
+
+.optionone {
+  font-family: Montserrat, Regular;
+  padding-top: 39px;
+  ul {
+    list-style: none;
+    width: 378px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .box-one-heading {
+    li:nth-of-type(1) {
+      @include nth-of-tone-style;
+    }
+    li:nth-of-type(2) {
+      @include nth-of-ttwo-style;
+      span {
+        font-size: 94px;
+      }
+    }
+    li:nth-of-type(3){
+      @include nth-of-tthree-style;
+      p {
+        color:#FFFFFF;
+        opacity: 0.5;
+        font-size: 14px;
+      }
+    }
+    li:nth-of-type(4) {
+      background-image: url("../images/pricingimages/u273.png");
+      height: 6px;
+    }
+  }
+  .plancontent {
+    li {
+      @include plancontent-li-style;
+    }
+
+    li:last-of-type{
+      border-radius: 0px 0px 5px 5px;
+    }
+  }
+}
+
+// option two
+.optiontwo {
+  font-family: Montserrat, Regular;
+  ul {
+    list-style: none;
+    width: 378px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .box-one-heading {
+    li:nth-of-type(1) {
+      @include nth-of-tone-style;
+    }
+    li:nth-of-type(2) {
+      @include nth-of-ttwo-style;
+      span {
+        font-size: 94px;
+      }
+    }
+    li:nth-of-type(3){
+      @include nth-of-tthree-style;
+      p {
+        color:$font-pricing-color;
+        opacity: 0.5;
+        font-size: 14px;
+      }
+    }
+    li:nth-of-type(4) {
+      background-image: url("../images/pricingimages/u273.png");
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: $font-pricing-color;
+    }
+  }
+  .plancontent {
+    li {
+      @include plancontent-li-style;
+    }
+    li:last-of-type{
+      border-radius: 0px 0px 5px 5px;
+    }
+  }
+}
+
+// optionthree
+.optionthree {
+  font-family: Montserrat, Regular;
+  padding-top: 39px;
+  ul {
+    list-style: none;
+    width: 378px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .box-one-heading {
+    li:nth-of-type(1) {
+      @include nth-of-tone-style;
+    }
+    li:nth-of-type(2) {
+      @include nth-of-ttwo-style;
+      span {
+        font-size: 94px;
+      }
+    }
+    li:nth-of-type(3){
+      @include nth-of-tthree-style;
+      p {
+        color:#FFFFFF;
+        opacity: 0.5;
+        font-size: 14px;
+      }
+    }
+    li:nth-of-type(4) {
+      background-image: url("../images/pricingimages/u273.png");
+      height: 6px;
+    }
+  }
+  .plancontent {
+    li {
+      @include plancontent-li-style;
+    }
+
+    li:last-of-type{
+      border-radius: 0px 0px 5px 5px;
+    }
+  }
+}
+
+.swiper .swiper2 {
+  max-width: 100%;
+  .swiper-slide {
+    text-align: center;
+    display: flex;
+  }
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    color: red;
+  }
+  .swiper-pagination-bullet {
+    background: #41d395;
+  }
+}
+
+@media (min-width: 768px){
+
+  .block-pricing .container {
+    width: 100%;
+
+     .swiper .swiper2 .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+  }
+}

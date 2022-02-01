@@ -2,37 +2,14 @@
 "use strict";
 
 // block -top
-
 var burger = document.getElementById("burger");
-var sideNav = document.getElementsByClassName("side-menu")[0];
-var links = document.getElementsByClassName('link');
-
+var menu = document.getElementsByClassName("link-content")[0];
 burger.addEventListener("click", function(){
-  sideNav.classList.toggle("width");
-  this.classList.toggle("rotateZ");
+  menu.classList.toggle("active");
 });
-
-window.addEventListener("resize", function(){
-  sideNav.classList.remove("width");
-  burger.classList.remove("rotateZ");
-  for(var x of links){
-    x.classList.remove("active");
-  }
-});
-
-for (var x of links){
-  x.addEventListener("click", function(){
-    for(var x of links){
-      x.classList.remove("active");
-    }
-    this.classList.add("active");
-  });
-}
-
 // end of block top
 
 // start of block-tabs-swiper
-
 var buttons = document.getElementsByClassName('buttontabs');
 for (var x of buttons){
   x.addEventListener("click", function(){
@@ -41,7 +18,7 @@ for (var x of buttons){
     }
     this.classList.add("activetwo");
     var index = this.getAttribute("index");
-    // var index = document.querySelector(".active").getAttribute("index");
-    swiper.slideTo(index, 1000);
+    swiper1.slideTo(index, 1000);
   });
 }
+// end of block-tabs-swiper
