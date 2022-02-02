@@ -199,21 +199,23 @@
   }
 
     .images-box-1 {
+      position: static;
       .imagess {
         padding: 0;
       }
 
       .img-1 {
+        display:flex;
+        // flex-direction: column;
         img {
-          width: 150px;
           height: auto;
         }
         .first {
           top: 4px;
-          bottom: 12px;
+          bottom: 10px;
           left: 5px;
           right: -4px;
-          width: 139px;
+          width: 147px;
         }
 
         .text-1 {
@@ -223,20 +225,19 @@
     }
 
     .images-box-1 {
+
       .img-3 {
 
         img {
-          width: 310px;
           height: auto;
-
         }
 
         .third {
-          top: 3px;
-          bottom: 12px;
-          left: 5px;
+          top: 5px;
+          bottom: 17px;
+          left: 7px;
           right: 0;
-          width: 298px;
+          width: 314px;
         }
         .text-3 {
           font-size: 14px;

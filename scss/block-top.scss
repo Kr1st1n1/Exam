@@ -10,7 +10,6 @@
      flex-direction: row;
      justify-content: space-between;
      position: fixed;
-     margin-bottom: 10px;
    }
  }
 }
@@ -23,13 +22,7 @@
       font-size: 14px;
       margin-left: 20px;
       margin-right: 20px;
-      opacity: 0.69;
       color: #a6a6a6;
-
-      &:hover {
-       color:white;
-       border-bottom: 2px solid #E27866;
-     }
 
       &:last-of-type {
         margin-right: 0px;
@@ -37,12 +30,47 @@
   }
 }
 
-   .try {
-    color: $nav-font-color;
-    font-size: 20px;
-    opacity: 1;
-    border-bottom: 2px solid $nav-active-border-color;
+a.link {
+  position:relative;
+  display: block;
+  cursor: pointer;
+  color: white;
+
+  &:hover {
+    color: white;
+    text-decoration: none;
   }
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    bottom: -10px;
+    background: #E27866;
+  }
+
+  &:before{
+    left: 0;
+  }
+  &:after{
+    right: 0;
+    background: #E27866;
+    transition: width 0.5s cubic-bazier(0.22,0.61,0.31,1);
+  }
+
+  &:hover:before{
+    background: #E27866;
+    width: 100%;
+    transition: width 0.8s cubic-bazier(0.22,0.61,0.31,1);
+  }
+
+  &:hover:after{
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+  }
+}
 
   nav.menu {
     display: flex;
