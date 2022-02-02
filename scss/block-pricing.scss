@@ -214,7 +214,7 @@
   }
 }
 
-.swiper .swiper2 {
+.swiper2 {
   max-width: 100%;
   .swiper-slide {
     text-align: center;
@@ -224,10 +224,16 @@
     display: flex;
     align-items: center;
   }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+   display: none;
+  }
   .swiper-button-prev:after,
   .swiper-button-next:after {
-    color: red;
+   display: none;
   }
+
   .swiper-pagination-bullet {
     background: #41d395;
   }
@@ -238,9 +244,13 @@
   .block-pricing .container {
     width: 100%;
 
-     .swiper .swiper2 .swiper-button-prev,
+
+    .swiper2 .swiper-button-prev,
     .swiper-button-next {
-      display: none;
+      display: block;
     }
+  }
+  .optionone {
+    padding-top: 0px;
   }
 }
